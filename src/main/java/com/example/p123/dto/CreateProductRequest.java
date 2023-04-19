@@ -1,4 +1,4 @@
-package com.example.p123.controller;
+package com.example.p123.dto;
 
 import com.example.p123.model.Category;
 import lombok.*;

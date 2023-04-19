@@ -1,5 +1,6 @@
 package com.example.p123.controller;
 
+import com.example.p123.dto.CreateProductRequest;
 import com.example.p123.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
