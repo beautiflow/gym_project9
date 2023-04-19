@@ -123,7 +123,7 @@
     </thead>
     <tbody>
     <tr th:each="question: ${questionList}">
-        <td></td>
+        <td th:text="*{question.id}"></td>
         <td><a th:href="@{/question/{id}(id=${question.id})}">[[${question.title}]]</a></td>
         <td th:text="${question.content}"></td>
         <td th:text="${#temporals.format(question.createdAt, 'yyyy-MM-dd')}"></td>
