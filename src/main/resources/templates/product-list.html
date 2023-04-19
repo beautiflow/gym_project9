@@ -85,7 +85,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="/static" class="nav-item nav-link" >Home</a>
+                    <a href="/" class="nav-item nav-link" >Home</a>
                     <a href="/notice" class="nav-item nav-link">Notice</a>
                     <a href="/api/products" class="nav-item nav-link active">Schedule</a>
                     <a href="/api/new-product" class="nav-item nav-link">Contact</a>
@@ -110,7 +110,6 @@
 <!-- Navbar End -->
 
 
-<h1>GYM</h1>
 <h2>고객 요청 사항</h2>
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
     <a th:href="@{/api/new-product}" class="btn btn-primary me-md-2" type="button">예약 신청</a>
@@ -118,7 +117,7 @@
 <table class="table table-hover table-striped">
     <thead>
     <tr>
-        <th scope="col">Id</th>
+        <th scope="col">번호</th>
         <th scope="col">이름</th>
         <th scope="col">카테고리</th>
         <th scope="col">요일</th>
@@ -136,7 +135,7 @@
         <td th:text="*{day}"></td>
         <td th:text="*{time}"></td>
         <td th:text="*{description}"></td>
-        <td th:text="*{createdAt}"></td>
+        <td th:text="${#temporals.format(product.createdAt, 'yyyy-MM-dd')}"></td>
     </tr>
     </tbody>
 </table>
