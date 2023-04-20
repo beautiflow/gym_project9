@@ -22,7 +22,7 @@ public class NoticeController {
         model.addAttribute("noticeList", noticeService.findAllDesc(pageable));
         return "/notice/noticeList";
     }
-    @GetMapping("/notice/save")
+    @GetMapping("/admin/notice/save")
     public String noticeSave(Model model) {
         model.addAttribute("saveForm", new NoticeSaveRequestDto());
         return "notice/saveForm";
@@ -34,7 +34,7 @@ public class NoticeController {
         return "notice/detail";
     }
 
-    @GetMapping("/notice/update/{id}")
+    @GetMapping("/admin/notice/update/{id}")
     public String noticeUpdate(@PathVariable Long id, Model model) {
         model.addAttribute("notice", noticeService.findById(id));
         return "notice/update";

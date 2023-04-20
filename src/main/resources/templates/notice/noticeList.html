@@ -50,7 +50,7 @@
 <div class="container-fluid bg-primary text-white d-none d-lg-flex">
   <div class="container py-3">
     <div class="d-flex align-items-center">
-      <a href="/">
+      <a href="/static">
         <h2 class="text-white fw-bold m-0">Project_9</h2>
       </a>
       <div class="ms-auto d-flex align-items-center">
@@ -76,7 +76,7 @@
 <div class="container-fluid bg-white sticky-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-      <a href="/" class="navbar-brand d-lg-none">
+      <a href="/static" class="navbar-brand d-lg-none">
         <h1 class="fw-bold m-0">Project_9</h1>
       </a>
       <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
@@ -85,7 +85,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-          <a href="/" class="nav-item nav-link" >Home</a>
+          <a href="/static" class="nav-item nav-link" >Home</a>
           <a href="/notice" class="nav-item nav-link active">Notice</a>
           <a href="/api/products" class="nav-item nav-link">Schedule</a>
           <a href="/api/new-product" class="nav-item nav-link">Contact</a>
@@ -111,7 +111,7 @@
 
 
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <a href="/notice/save" class="btn btn-primary">작성</a>
+  <a href="/admin/notice/save" class="btn btn-primary" sec:authorize="hasAnyAuthority('ROLE_ADMIN')">작성</a>
 </div>
 <table id="table" class="table table-hover table-striped text-center">
   <thead>
@@ -134,20 +134,20 @@
 <ul class="pagination justify-content-center">
   <li class="page-item disabled " th:if="${noticeList.first}">
     <a class="page-link"
-       th:href="@{/notice(page=|${noticeList.number-1}|)}">Previous</a>
+       th:href="@{/templates/notice(page=|${noticeList.number-1}|)}">Previous</a>
   </li>
   <li class="page-item" th:unless="${noticeList.first}">
     <a class="page-link page-link-success"
-       th:href="@{/notice(page=|${noticeList.number-1}|)}">Previous</a>
+       th:href="@{/templates/notice(page=|${noticeList.number-1}|)}">Previous</a>
   </li>
 
   <li class="page-item disabled" th:if="${noticeList.last}">
     <a class="page-link"
-       th:href="@{/notice(page=|${noticeList.number+1}|)}">Next</a>
+       th:href="@{/templates/notice(page=|${noticeList.number+1}|)}">Next</a>
   </li>
   <li class="page-item" th:unless="${noticeList.last}">
     <a class="page-link"
-       th:href="@{/notice(page=|${noticeList.number+1}|)}">Next</a>
+       th:href="@{/templates/notice(page=|${noticeList.number+1}|)}">Next</a>
   </li>
 </ul>
 
