@@ -154,8 +154,10 @@
                     <li th:id="|answer-${answer.id}|" class=list-group-item d-flex justify-content-between>
                         <div>[[${answer.comment}]]</div>
                         <div style="width:100px;float:right;">
+                            <span sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
                             <button th:onClick="|main.answerDelete(${question.id}, ${answer.id})|" class="btn btn-primary">댓글삭제
                             </button>
+                            </span>
                             <div style="width:100px;float:right;">
                                 <!--                            <button sec:authorize="hasAnyAuthority('ROLE_ADMIN')"-->
                                 <!--                                    th:onClick="|main.answerDelete(${question.id}, ${answer.id})|" class="btn btn-primary">댓글삭제-->
