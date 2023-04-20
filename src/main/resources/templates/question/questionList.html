@@ -110,7 +110,7 @@
 <!-- Navbar End -->
 
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <a href="/question/save" class="btn btn-primary">작성</a>
+    <a href="/question/save" sec:authorize="isAuthenticated()" class="btn btn-primary">작성</a>
 </div>
 <table id="table" class="table table-hover table-striped text-center">
     <thead>
