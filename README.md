@@ -16,6 +16,3 @@
 
 ## 📄 전체 기능도
 <img src="https://user-images.githubusercontent.com/105831341/233774185-a133633e-fdc9-4d87-954d-fb78d794fc4a.png">
-
-## 🪄 시스템 흐름도
-<img src="https://user-images.githubusercontent.com/105831341/233774211-2cbfb227-467b-4230-adb6-f474302fdcce.png">
