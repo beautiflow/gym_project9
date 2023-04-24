@@ -1,6 +1,5 @@
 package com.example.p123.repository;
 
-//import com.example.p123.entity.Category;
 import com.example.p123.model.Category;
 import com.example.p123.model.Product;
 import org.springframework.data.domain.Page;
