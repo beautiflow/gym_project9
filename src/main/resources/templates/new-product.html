@@ -12,7 +12,7 @@
 
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +26,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -110,9 +110,9 @@
 <!-- Navbar End -->
 
 
-<h1>GYM</h1>
-<h2>Schedule inquiry & Consulting</h2>
-<form th:action="@{/api/products}" method="post">
+<h1 class="Form">GYM</h1>
+<h2 class="Form">예약 신청서</h2>
+<form class="Form" th:action="@{/api/products}" method="post">
     <div class="mb-3">
         <label for="Name" class="form-label">이름</label>
         <input type="text" class="form-control" id="Name" name="Name">
@@ -127,33 +127,26 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="day" class="form-label">요일</label>
-        <select id="day" name="day" class="form-select">
-            <option selected>요일을 선택해주세요</option>
-            <option value="월">월</option>
-            <option value="화">화</option>
-            <option value="수">수</option>
-            <option value="목">목</option>
-            <option value="금">금</option>
-            <option value="토">토</option>
-        </select>
+        <label for="date" class="form-label">예약 날짜</label>
+        <input id="date" type="datetime-local" name="date" class="form-select">
     </div>
     <div class="mb-3">
         <label for="time" class="form-label">시간</label>
         <select id="time" name="time" class="form-select">
             <option selected>시간을 선택해주세요</option>
-            <option value="09:00~10:00">09:00~10:00</option>
-            <option value="10:00~11:00">10:00~11:00</option>
-            <option value="11:00~12:00">11:00~12:00</option>
-            <option value="12:00~13:00">12:00~13:00</option>
-            <option value="13:00~14:00">13:00~14:00</option>
-            <option value="14:00~15:00">14:00~15:00</option>
-            <option value="15:00~16:00">15:00~16:00</option>
-            <option value="16:00~17:00">16:00~17:00</option>
-            <option value="17:00~18:00">17:00~18:00</option>
-            <option value="18:00~19:00">18:00~19:00</option>
-            <option value="19:00~20:00">19:00~20:00</option>
-            <option value="20:00~21:00">20:00~21:00</option>
+            <option value="10분">10분</option>
+            <option value="15분">15분</option>
+            <option value="20분">20분</option>
+            <option value="25분">25분</option>
+            <option value="30분">30분</option>
+            <option value="35분">35분</option>
+            <option value="40분">40분</option>
+            <option value="45분">45분</option>
+            <option value="50분">50분</option>
+            <option value="55분">55분</option>
+            <option value="60분">60분</option>
+            <option value="90분">90분</option>
+            <option value="120분">120분</option>
         </select>
     </div>
 
@@ -161,7 +154,7 @@
         <label for="description" class="form-label">문의 사항</label>
         <textarea class="form-control" id="description" name="description" rows="3"></textarea>
     </div>
-    <button type="submit" id="btn-save" class="btn btn-primary">Submit</button>
+    <button type="button" id="btn-save" class="btn btn-primary">제출하기</button>
 
     <script type="text/javascript" th:src="@{/js/product.js}"></script>
 
@@ -237,14 +230,14 @@
 <!-- JavaScript Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../lib/wow/wow.min.js"></script>
-<script src="../lib/easing/easing.min.js"></script>
-<script src="../lib/waypoints/waypoints.min.js"></script>
-<script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="../lib/lightbox/js/lightbox.min.js"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/waypoints/waypoints.min.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/lightbox/js/lightbox.min.js"></script>
 
 <!-- Template Javascript -->
-<script src="../js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 
 </html>

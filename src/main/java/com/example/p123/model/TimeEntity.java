@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
+
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
@@ -23,4 +24,7 @@ public abstract class TimeEntity {
     @NotNull
     @LastModifiedDate
     private LocalDateTime updateAt;
+
+    @LastModifiedDate
+    private LocalDateTime date;
 }

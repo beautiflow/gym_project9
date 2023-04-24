@@ -37,11 +37,11 @@ public class ProductController {
     }
 
     @PostMapping("/api/products")
-    public String newProduct(@ModelAttribute CreateProductRequest createProductRequest) {
+    public String newProduct(@RequestBody CreateProductRequest createProductRequest ) {
         productService.createProduct(
                 createProductRequest.getName(),
                 createProductRequest.getCategory(),
-                createProductRequest.getDay(),
+                createProductRequest.getDate(),
                 createProductRequest.getTime(),
                 createProductRequest.getDescription());
         return "redirect:/";

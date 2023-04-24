@@ -8,14 +8,14 @@ import lombok.*;
 public class CreateProductRequest {
     private String name;
     private Category category;
-    private String day;
+    private String date;
     private String time;
     private String description;
 
-    public CreateProductRequest(String name, Category category, String day, String time, String description) {
+    public CreateProductRequest(String name, Category category, String date, String time, String description) {
         this.name = name;
         this.category = category;
-        this.day = day;
+        this.date = date;
         this.time = time;
         this.description = description;
     }
@@ -36,12 +36,12 @@ public class CreateProductRequest {
         this.category = category;
     }
 
-    public String getDay() {
-        return day;
+    public String getDate() {
+        return date;
     }
 
-    public void setDay(String day) {
-        this.day = day;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getTime() {
