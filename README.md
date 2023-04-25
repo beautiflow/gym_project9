@@ -18,4 +18,4 @@
 <img src="https://user-images.githubusercontent.com/105831341/233774185-a133633e-fdc9-4d87-954d-fb78d794fc4a.png">
 
 ## 🌐 아키텍처 설계도
-<img src="https://user-images.githubusercontent.com/105831341/234235805-79fa4544-c48c-4f99-b942-76b64fd5227a.jpeg">
+<img src="https://user-images.githubusercontent.com/105831341/234235805-79fa4544-c48c-4f99-b942-76b64fd5227a.jpeg" width="500" height="300"/>
