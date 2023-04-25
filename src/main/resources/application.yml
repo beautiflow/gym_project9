@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/gym?serverTimezone=Asia/Seoul
-    username: root
-    password: root1234
+    url: jdbc:mysql://bc154a29fee737:f3bc526a@us-cdbr-east-06.cleardb.net/heroku_3f31d6986abef3c?reconnect=true
+    username: bc154a29fee737
+    password: heroku_3f31d6986abef3c
 
   jpa:
     open-in-view: true
