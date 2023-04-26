@@ -46,7 +46,7 @@ public class UserController {
             model.addAttribute("errorMessage", e.getMessage());
             return "users/joinForm";
         }
-        return "redirect:/notice";
+        return "redirect:/";
     }
 
     @GetMapping("/login")
