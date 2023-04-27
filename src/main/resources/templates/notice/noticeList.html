@@ -116,7 +116,7 @@
 <table id="table" class="table table-hover table-striped text-center">
   <thead>
   <tr>
-
+    <th scope="col">번호</th>
     <th scope="col">제목</th>
     <th scope="col">내용</th>
     <th scope="col">등록일</th>
@@ -124,7 +124,7 @@
   </thead>
   <tbody>
   <tr th:each="notice: ${noticeList}">
-
+    <td th:text="*{notice.id}"></td>
     <td><a th:href="@{/notice/{id}(id=${notice.id})}">[[${notice.title}]]</a></td>
     <td th:text="${notice.content}">g</td>
     <td th:text="${#temporals.format(notice.createdAt, 'yyyy-MM-dd')}"></td>
